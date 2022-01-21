@@ -2,7 +2,7 @@
 ## Indian Institute of Information Technology, Allahabad ##
 ## Abstract
 
-sorting algorithems provide a method to arrange a given series of elements systematically based on some measurable quantity. Thus we may arrange numbers according to their values or letters according to their ASCII values using sorting. In this paper we will describe a simple and easy to implement sorting algorithm called Bubble Sort to arrange a given array in ascending as well as descending order. Bubble sort may not be the king of the jungle but it is powerfull in its own way.
+Sorting algorithms provide a method to arrange a given series of elements systematically based on some measurable quantity. Thus we may arrange numbers according to their values or letters according to their ASCII values using sorting. In this paper we will describe a simple and easy to implement sorting algorithm called Bubble Sort to arrange a given array in ascending as well as descending order. Bubble sort may not be the king of the jungle but it is powerful in its own way.
 
 ## Introduction
 
@@ -11,38 +11,38 @@ Given an array of numbers the objective of any sorting algorithm is to arrange t
 
 ## Algorithm
 
-so what is sorting algorithm?   
+So what is sorting algorithm?   
 a sorting algorithm is just some bunch of instructions performed on a given shuffled array of numbers as an input so as to output a sorted array.in bubble sort, to sort the array in ascending order it performers passes. in each pass it first compare the first two elements in the array. In case the second one is smaller than the first, it will swap the two, and move on to the next element, and so on.We also included a variable to help detect if the given array is already sorted and to stop the algorithem on spot.To get a seperate list of even and odd sorted array we traversed through the already sorted array and saved them seperatly.For the descending array we traversed through the already sorted array from the end.
 
 ## Example
-let us consider an array say $(6 , 4 , 9 , 2 , 8)$ and sort it in ascending order.In each pass bold elements are being compared.    
+let us consider an array say (6 , 4 , 9 , 2 , 8) and sort it in ascending order.In each pass bold elements are being compared.    
 - First pass
 1. ( **6** , **4** , 9 , 2 , 8 ) &rarr; ( **4** , **6** , 9 , 2 , 8 )     
-Here algorithem swaped them because $4 < 6$      
+Here algorithem swaped them because  4 < 6     
 2.   ( 4 , **6** , **9** , 2 , 8 ) &rarr; ( 4 , **6** , **9** , 2 , 8 )      
-No swaping was done here since  $ 6 < 9 $     
+No swaping was done here since   6 < 9      
 3. ( 4 , 6 , **9** , **2** , 8 ) &rarr; ( 4 , 6 , **2** , **9** ,  8 )    
-Swaping happened beacuase $ 2 < 9 $
+Swaping happened beacuase  2 < 9 
 4. ( 4 , 6 , 2 , **9** , **8** ) &rarr; ( 4 , 6 , 2 , **8** , **9** )   
-Swaping happened because $ 8 < 9 $
+Swaping happened because  8 < 9 
 
 - Second pass
 
 1. ( **4** , **6** , 2 , 8 , 9 ) &rarr; ( **4** , **6** , 2 , 8 , 9 )   
-No swaping since $4 < 6 $
+No swaping since 4 < 6 
 2. ( 4 , **6** , **2** , 8 , 9 ) &rarr; ( 4 , **6** , **2** , 8 , 9 )   
-Swaping occured since $ 2 < 6 $
+Swaping occured since  2 < 6 
 3. ( 4 , 2 , **6** , **8** , 9 ) &rarr; ( 4 , 2 , **6** , **8** , 9 )   
-No swaping since already $ 6 < 8 $
+No swaping since already  6 < 8 
 
 - Third pass
 1. ( **4** , **2** , 6 , 8 , 9 ) &rarr; ( **2** , **4** , 6 , 8 , 9 )   
-Swaping occured since $ 2 < 4 $
+Swaping occured since  2 < 4 
 2. ( 2 , **4** , **6** , 8 , 9 ) &rarr; ( 2 , **4** , **6** , 8 , 9 )       
-No swapping since $ 4 < 6 $
+No swapping since  4 < 6 
 - Fourth pass
 1. ( **2** , **4** , 6 , 8 , 9 ) &rarr; ( **2** , **4** , 6 , 8 , 9 )       
-No swap since already $ 2 < 4 $     
+No swap since already  2 < 4      
 Here we observed that even when the array was sorted the algorithem didn't know and it still performed the comparision.
 
 ## Time complexity
@@ -50,12 +50,12 @@ In bubble sort algorithm the outer loop runs for $n$ times and the inner loops r
 We can optimize it by stopping the outer loop if the inner loop dosen`t perform any swap in the first pass itself.
 If the array is already sorted then the loop will run n times only.
 
-- Worst and Average Case Time Complexity: $O(n^2)$
+- Worst and Average Case Time Complexity: O(n^2)
 
 	 Worst case occurs when array is reverse sorted.
      And average case when the arary is shuffled.
 
-- Best Case Time Complexity: $O(n)$
+- Best Case Time Complexity: O(n)
 
 	 Best case occurs when array is already sorted. We used the flag method here.
 
