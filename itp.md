@@ -62,7 +62,6 @@ If the array is already sorted then the loop will run n times only.
 ## Pseudocode
 
 This program will sort the elements of an array and print even sorted, odd sorted list seperately,
-```python
 In function main()
 	Initialize variables
 	INPUT Array from user
